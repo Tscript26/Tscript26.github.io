@@ -1,0 +1,13 @@
+---
+layout: page
+title: "{{ page.category }}" 分类的文章
+permalink: /categories/{{ page.category }}/
+---
+
+<h2>所有关于 {{ page.category }} 的文章：</h2>
+
+<ul>
+  {% for post in site.categories[page.category] %}
+    <li><a href="{{ post[0].url }}">{{ post[0].title }}</a> - {{ post[0].date | date: "%Y-%m-%d" }}</li>
+  {% endfor %}
+</ul>
