@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<posts>
-  <post>
-    <title>{{ page.title }}</title>
-    <content>{{ content }}</content>
-    <date>{{ page.date | date: "%Y-%m-%d" }}</date>
-  </post>
-</posts>
